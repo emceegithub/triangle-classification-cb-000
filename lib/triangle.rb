@@ -13,8 +13,8 @@ class Triangle
     if ((@side1 == 0) ||  (@side2 == 0) || (@side1 == 0))
       raise TriangleError
     elsif (@side1 < 0 ||  @side2 < 0 || @side3 < 0)
-      puts "negative side"
-      #raise TriangleError
+      #puts "negative side"
+      raise TriangleError
     elsif (array[2] >= array[0] + array[1])
         return "tri ineq"
     elsif ((side1 == side2) && (side2 == side3))
