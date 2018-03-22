@@ -16,7 +16,8 @@ class Triangle
       #puts "negative side"
       raise TriangleError
     elsif (array[2] >= array[0] + array[1])
-        return "tri ineq"
+      raise TriangleError
+      #return "tri ineq"
     elsif ((side1 == side2) && (side2 == side3))
       return :equilateral
     elsif ((side1 == side2) ||  (side2 == side3) || (side1 == side3))
