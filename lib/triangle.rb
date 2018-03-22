@@ -10,7 +10,7 @@ class Triangle
   def kind
     if ((@side1 == 0) ||  (@side2 == 0) || (@side1 == 0))
       raise TriangleError
-    elsif ((@side1 < 0) ||  (@side2 < 0) || (@side1 < 0))
+    elsif ((@side1 < 0) ||  (@side2 < 0) || (@side3 < 0))
       raise TriangleError
     elsif ((side1 == side2) && (side2 == side3))
       return :equilateral
