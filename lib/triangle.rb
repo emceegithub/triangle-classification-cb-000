@@ -9,7 +9,6 @@ class Triangle
   
   def kind
     if ((side1 == 0) ||  (side2 == 0) || (side1 == 0))
-      #return "zero side"
       begin 
         raise TriangleError
       rescue TriangleError => error
@@ -31,7 +30,6 @@ class Triangle
       else
         # do nothing
       end
-      #return array[0].to_s + " " + array[1].to_s + " " + array[2].to_s
     else
       # do nothing
     end
