@@ -11,8 +11,6 @@ class Triangle
     if ((side1 == 0) ||  (side2 == 0) || (side1 == 0))
       begin 
         raise TriangleError
-      rescue TriangleError => error
-        puts error.message
       end
     elsif ((side1 == side2) && (side2 == side3))
       return :equilateral
